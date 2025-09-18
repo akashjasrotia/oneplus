@@ -11,8 +11,17 @@ export default function Landing() {
   const never = useRef(null);
   const settle = useRef(null);
   const videoRef = useRef(null);
+  const containerRef = useRef(null);
 
   useGSAP(() => {
+    gsap.from(containerRef.current.children, {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.3,
+      ease: "power.out",
+      delay: 0.5,
+    })
     gsap.to(never.current, {
       x: -500,
       duration: 1,
@@ -44,7 +53,7 @@ export default function Landing() {
   });
 
   return (
-    <div className="container pt-10 font-oneplus relative min-w-[100vw]">
+    <div ref={containerRef} className="container pt-10 font-oneplus relative min-w-[100vw]">
       <h1
         ref={never}
         className="tracking-tight text-9xl md:left-[35%] font-bold absolute left-4"
@@ -61,7 +70,7 @@ export default function Landing() {
 
       <div
         ref={videoRef}
-        className="relative overflow-hidden h-auto mt-80 lg:mt-90 w-[80vw] lg:w-[60vw] lg:mb-0 mb-10 mx-auto rounded-lg"
+        className="relative overflow-hidden h-auto mt-80 lg:mt-90 w-[80vw] lg:w-[80vw] lg:mb-0 mb-10 mx-auto rounded-lg"
       >
         {/* Video */}
         <video className="w-full" src={video} autoPlay muted loop />
