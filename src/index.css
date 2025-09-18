@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'oneplus';
+  src: url('./assets/oneplus.ttf') format('truetype');
+  font-weight: normal;
+}
+@theme{
+  --font-oneplus: 'oneplus', sans-serif;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+::selection {
+  background: #000;
+  color: #fff;
+}
