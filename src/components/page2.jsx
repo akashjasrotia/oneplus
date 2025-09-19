@@ -1,5 +1,5 @@
 import Hero from "../assets/images-videos/Hero.jpg";
-import Pad3 from "../assets/images-videos/Pad3.jpg";
+import Pad3 from "../assets/images-videos/pad3.jpg";
 import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
