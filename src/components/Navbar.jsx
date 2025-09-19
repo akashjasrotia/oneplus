@@ -4,7 +4,7 @@ import { ShoppingCart, Search, Menu, CircleUserRound } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <div className="font-oneplus border-b-1 px-1.5 py-6 border-gray-200 flex items-center w-full h-12 lg:px-14 justify-between ">
+    <div className="fixed z-100 font-oneplus px-1.5 py-6 border-gray-200 flex items-center w-full h-12 lg:px-14 justify-between ">
       <div className="shrink-0 w-26 ">
         <img src={oneplus} className="cursor-pointer" />
       </div>

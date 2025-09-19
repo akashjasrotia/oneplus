@@ -53,7 +53,7 @@ export default function Landing() {
   });
 
   return (
-    <div ref={containerRef} className="container pt-10 font-oneplus relative min-w-[100vw]">
+    <div ref={containerRef} className="z-50 container pt-10 font-oneplus relative min-w-[100vw]">
       <h1
         ref={never}
         className="tracking-tight text-9xl md:left-[35%] font-bold absolute left-4"
@@ -73,7 +73,7 @@ export default function Landing() {
         className="relative overflow-hidden h-auto mt-80 lg:mt-90 w-[80vw] lg:w-[80vw] lg:mb-0 mb-10 mx-auto rounded-lg"
       >
         {/* Video */}
-        <video className="w-full" src={video} autoPlay muted loop />
+        <video className="w-full z-10" src={video} autoPlay muted loop />
 
         {/* Overlay Text */}
         <h1 className="absolute bottom-8 left-8 z-10 text-white text-2xl font-bold">
