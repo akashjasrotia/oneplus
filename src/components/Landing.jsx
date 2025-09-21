@@ -141,14 +141,14 @@ export default function Landing() {
 
       <h1
         ref={never}
-        className="tracking-tight text-9xl md:left-[35%] font-bold absolute left-4"
+        className="tracking-tight text-5xl top-20 md:text-9xl md:left-[35%] font-bold absolute left-30"
       >
         Never
       </h1>
 
       <h1
         ref={settle}
-        className="tracking-tight text-9xl md:right-[35%] font-bold text-red-600 absolute right-6 top-40"
+        className="tracking-tight text-5xl md:text-9xl md:right-[35%] font-bold text-red-600 absolute right-40 top-40"
       >
         Settle
       </h1>
@@ -156,7 +156,7 @@ export default function Landing() {
       <div
         ref={videoRef}
         onClick={toggleMute}
-        className="relative overflow-hidden h-auto mt-80 lg:mt-90 w-[80vw] lg:w-[80vw] lg:mb-0 mb-10 mx-auto rounded-lg cursor-none"
+        className="relative overflow-hidden h-auto mt-60 lg:mt-90 w-[60vw] lg:w-[80vw] lg:mb-0 mb-10 mx-auto rounded-lg cursor-none"
       >
         {/* Video */}
         <video className="w-full z-10" src={video} autoPlay loop muted={muted} />

@@ -12,6 +12,7 @@ export default function App() {
     gsap.to(barRef.current, {
       width: '100%',
       duration: 3,
+      delay:0.5,
       ease: 'power.out',
     })
   }, [loading])
@@ -19,7 +20,7 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 3500)
     return () => clearTimeout(timer)
   }, [])
 

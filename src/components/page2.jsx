@@ -34,10 +34,10 @@ export default function Page2() {
   );
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} className="overflow-hidden">
       <div
 
-        className="font-oneplus z-30 lg:pt-10 pt-30 relative h-full pb-30 bg-[#f8f8f8]"
+        className="font-oneplus z-30 lg:pt-10 relative h-full mb-10 md:mb-15"
       >
         <div className="absolute z-30 top-0 md:top-8 flex flex-col justify-center items-center w-full">
           <p className="text-gray-600">Sale starts 12AM, 22nd Sept.</p>
